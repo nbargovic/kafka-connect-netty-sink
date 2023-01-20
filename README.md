@@ -14,7 +14,7 @@ The output from this connector is a [DatagramPacket](https://netty.io/4.1/api/io
 
 ```json
 {
-    "name": "netty-snmp-sink-bytes-udp",
+    "name": "netty-snmp-sink-udp",
     "config": {
       "connector.class": "io.confluent.kafka.connect.NettySinkConnector",
       "tasks.max": 1,
@@ -36,7 +36,7 @@ The output from this connector is a [DatagramPacket](https://netty.io/4.1/api/io
 ```
 ```json
 {
-    "name": "netty-syslog-sink-bytes-tcp",
+    "name": "netty-syslog-sink-udp",
     "config": {
       "connector.class": "io.confluent.kafka.connect.NettySinkConnector",
       "tasks.max": 1,
