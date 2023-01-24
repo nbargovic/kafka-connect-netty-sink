@@ -157,6 +157,25 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>io.confluent</groupId>
+				<artifactId>kafka-connect-maven-plugin</artifactId>
+				<version>0.12.0</version>
+				<executions>
+					<execution>
+						<id>hub</id>
+						<goals>
+							<goal>kafka-connect</goal>
+						</goals>
+						<configuration>
+							<ownerUsername>bargovic</ownerUsername>
+							<componentTypes>
+								<componentType>sink</componentType>
+							</componentTypes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 
 		<resources>
